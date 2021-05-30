@@ -105,6 +105,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -139,8 +140,8 @@ ul {
 .contacts-link {
   display: flex;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--primary-text-color);
 
@@ -149,6 +150,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover .icon-smartphone,
@@ -161,11 +163,13 @@ ul {
 .icon-smartphone {
   margin-right: 10px;
   fill: var(--primary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-envelope {
   margin-right: 10px;
   fill: var(--primary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list {
@@ -222,6 +226,7 @@ ul {
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -350,6 +355,7 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -364,6 +370,7 @@ ul {
 
 .social-icon {
   fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Постоянные клиенты */
@@ -380,6 +387,7 @@ ul {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -395,6 +403,7 @@ ul {
 
 .icon-client {
   fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Футер */
@@ -448,6 +457,7 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link {
@@ -456,6 +466,7 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-title {
@@ -481,6 +492,7 @@ ul {
   border-radius: 50%;
 
   background-color: var(--footer-link-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
@@ -516,6 +528,9 @@ ul {
   font-size: 16px;
   line-height: 1.63;
   cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
@@ -537,11 +552,17 @@ ul {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.projects-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .projects-img {
